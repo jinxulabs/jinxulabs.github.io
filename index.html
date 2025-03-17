@@ -8,15 +8,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
         }
         .navbar {
-            background-color: #004080;
+            background-color: #00274D;
         }
         .navbar-brand, .nav-link {
             color: white !important;
         }
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?science,technology') no-repeat center center;
+            background: url('your-photo.jpg') no-repeat center center;
             background-size: cover;
             height: 400px;
             display: flex;
@@ -32,6 +33,11 @@
         .section {
             padding: 60px 20px;
         }
+        .news-section {
+            background-color: #B22222;
+            color: white;
+            padding: 40px 20px;
+        }
     </style>
 </head>
 <body>
@@ -44,9 +50,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#people">People</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#office-hours">Office Hours</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -66,24 +75,44 @@
         </div>
     </div>
 
-    <!-- Team Section -->
-    <div class="section bg-light" id="team">
+    <!-- People Section -->
+    <div class="section bg-light" id="people">
         <div class="container">
             <h2 class="text-center">Our Team</h2>
             <p class="text-center">Meet the experts behind our innovative research.</p>
         </div>
     </div>
 
-    <!-- News Section -->
-    <div class="section" id="news">
+    <!-- Publications Section -->
+    <div class="section" id="publications">
         <div class="container">
-            <h2 class="text-center">Latest News</h2>
-            <p class="text-center">Stay updated with our latest findings and breakthroughs.</p>
+            <h2 class="text-center">Publications</h2>
+            <p class="text-center">Explore our latest research papers and findings.</p>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <div class="news-section" id="news">
+        <div class="container">
+            <h2 class="text-center">News & Events</h2>
+            <p class="text-center">Stay updated with our latest research and events.</p>
+            <ul id="news-list" class="text-center">
+                <li>News Item 1 - <i>March 2025</i></li>
+                <li>News Item 2 - <i>April 2025</i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Office Hours Section -->
+    <div class="section bg-light" id="office-hours">
+        <div class="container">
+            <h2 class="text-center">Office Hours</h2>
+            <p class="text-center">Available for consultation at designated times.</p>
         </div>
     </div>
 
     <!-- Contact Section -->
-    <div class="section bg-light" id="contact">
+    <div class="section" id="contact">
         <div class="container">
             <h2 class="text-center">Contact Us</h2>
             <p class="text-center">Email: contact@jinxulabs.com</p>
